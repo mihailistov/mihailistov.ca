@@ -90,7 +90,7 @@ defaults:
 
 domain: mihailistov.github.io
 url: "https://mihailistov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/mihailistov.ca" # the subpath of your site, e.g. /blog
+basewebsite: "/mihailistov.ca" # the subpath of your site, e.g. /blog
 permalink: /blog/:slug
 timezone: America/New_York
 future: false
