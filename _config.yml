@@ -31,9 +31,11 @@ github_username:  jekyll
 
 # Build settings
 # theme: minima
-theme: jekyll-bear-theme
+# theme: jekyll-bear-theme
+remote-theme: https://github.com/mihailistov/jekyllBear
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -109,4 +111,3 @@ links:
 # Add links for more focus here
 special_links:
   "Search": https://duckduckgo.com
-  
