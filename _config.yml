@@ -88,8 +88,8 @@ defaults:
     values:
       layout: tagged
 
-domain: mihailistov.github.io
-url: "https://mihailistov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+domain: mihailistov.ca
+url: "https://mihailistov.ca" # the base hostname & protocol for your site, e.g. http://example.com
 basewebsite: "/mihailistov.ca" # the subpath of your site, e.g. /blog
 permalink: /blog/:slug
 timezone: America/New_York
