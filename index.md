@@ -3,7 +3,7 @@ layout: default
 title: Hello
 
 ---
-## Hi, I'm Mihai.
+## Hi, I'm Mihai \[me-high\].
 
 ### Tinkerer 🪛, wilderness lover 🏔, and fan of all things 2 wheels 🛵.
 
