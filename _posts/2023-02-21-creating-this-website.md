@@ -50,7 +50,7 @@ After some research it seems this solution would require at least $5/month if I 
 #### Cons
 
 * Requires lots of custom configuration, npm package setup
-* Still requires an instance to run Node.js
+* Still requires an instance to run Node.js ($$)
 
 ### Static site generators
 
@@ -109,9 +109,9 @@ I ended up going with Jekyll due to it's simplicity, the fact that it's free to 
 
 First I went and made sure I had all the prerequisites I needed to install Jekyll. Being on macOS I followed these detailed [instructions](https://jekyllrb.com/docs/installation/macos/)
 
-All was going so well until I had reached the last step which was to use Ruby to install the gem required for Jekyll: \`gem install jekyll
+All was going so well until I had reached the last step which was to use Ruby to install the gem required for Jekyll: `gem install jekyll`
 
-This resulted in a permissions error: \`\`(Gem::FilePermissionError)
+This resulted in a permissions error: `(Gem::FilePermissionError)`
 
 My instinct was to run the command with sudo: `sudo gem install jekyll`, however upon a bit of research I learned that you should _never_ run gem commands with sudo. Doing so poses security risks as you may inadvertently install a malicious gem, it's something that should never be done in a production environment.
 
@@ -119,14 +119,14 @@ Upon digging a bit deeper, it looked like it was trying to install Gems under `/
 
     gem install --user-install bundler jekyll
 
-Finally it complained that I didn't have the PATH exported: \`You don't have \[PATH \]in your PATH, gem executables will not run." while using "gem install --user-install bundler
+Finally it complained that I didn't have the PATH exported: `You don't have [PATH ]in your PATH, gem executables will not run.` after running `gem install --user-install bundler`
 
 Since I use zsh, I added the following to my `~/.zshrc` file:
 
     export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
     export PATH="$PATH:$GEM_HOME/bin"
 
-That finally allowed me to install the required gems for jekyll. Bit of a headache, it's no wonder that people are paying for a solution such as [https://www.rubyonmac.dev/](https://www.rubyonmac.dev/) but I wanted to save $49 USD.
+That finally allowed me to install the required Gems for Jekyll. Bit of a headache, it's no wonder that people are paying for a solution such as [Ruby on Mac](https://www.rubyonmac.dev/ "Ruby on Mac"), but I wanted to save $49 USD.
 
 ### Deciding on a Theme
 
@@ -153,7 +153,7 @@ Since I was already set on this theme, I wanted to see if the requirement of `"j
 
 `gem unpack jekyll-bear-theme`
 
-This created an output folder, so I dived into it: `cd jekyll-bear-theme-0.1.3`
+This created an output folder, so I dove head-first into it: `cd jekyll-bear-theme-0.1.3`
 
 I noticed the unpacked gem was missing the required `.gemspec` file that is needed to build a gem, so I resorted back to the git repo for the theme, and alas there was a copy of it, so I downloaded that file, and modified line #15 in `jekyllBear/jekyllBear.gemspec`
 
@@ -165,7 +165,7 @@ Finally, from inside the unpacked gem, I ran `gem build`, resulting in an output
 
 `gem install --local jekyll-bear-theme-0.1.3/jekyll-bear-theme-0.1.3.gem`
 
-Running `bundle install` shows a success, we now have jekyll version 3.9.3 installed alongside the `jekyll-bear-theme` gem, finally, we install the `github-pages` gem and test that the theme places nicely, which it does. Awesome sauce!
+Running `bundle install` shows a success, we now have jekyll version 3.9.3 installed alongside the `jekyll-bear-theme` gem, finally, we install the `github-pages` gem and test locally that the theme places nicely, which it does. Awesome sauce!
 
 ### Github Pages
 
@@ -181,7 +181,7 @@ However, there is a supported Gem that allows you to link to any theme that is h
 
 So now I had to fork the original theme into my own repo, and modify the `.gemspec` file to drop the required version, as done above, the process is the same.
 
-Next I updated the _config.yml file with `remote-theme: mihailistov/jekyllBear`
+Next I updated the `_config.yml` file with `remote-theme: mihailistov/jekyllBear`
 
 Success! Github Pages successfully builds and deploys my theme.
 
@@ -191,4 +191,4 @@ Mint, we're in business!
 
 ### Forestry CMS
 
-While completely unnecessary, I learned that there's a sweet CMS that plays nicely with Github Pages and Jekyll, within a minute I was able to connect Forestry to my repo and get it to display everything in a nice WYSIWYG editor. While I prefer to write my notes using a local markdown app like Obsidian, having Forestry setup will make things a bit more convenient if I need to make changes on the go.
+While completely unnecessary, I learned that there's a sweet CMS that plays nicely with Github Pages and Jekyll, within a minute I was able to connect Forestry to my repo and get it to display everything in a nice WYSIWYG editor. While I prefer to write my notes using a local markdown app like Obsidian, having Forestry setup will make things it a bit nicer to tweak things or just make quick updates.
