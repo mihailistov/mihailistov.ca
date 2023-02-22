@@ -9,7 +9,7 @@ title: Hello
 
 I'm that guy who can entertain any idea and am constantly trying new things. I enjoy having a routine but I also love learning ways to consciously improve it.
 
-I'm a Romanian-Canadian engineer working at [Plastiq](https://www.linkedin.com/company/plastiq) as a Software Engineer, however am actively seeking new opportunities. I studied Mechatronics Engineering at the University of Waterloo.
+I'm a Romanian-Canadian working at [Plastiq](https://www.linkedin.com/company/plastiq) as a Software Engineer, however am actively seeking new opportunities. I studied Mechatronics Engineering at the University of Waterloo.
 
 What gets me excited
 
