@@ -5,7 +5,7 @@ title: Hello
 ---
 ## Hi, I'm Mihai.
 
-### I'm a tinkerer, wilderness lover, and fan of all things 2 wheels.
+### I'm a tinkerer 🪛, wilderness lover 🏔, and fan of all things 2 wheels 🛵.
 
 I'm that guy who can entertain any idea and am constantly trying new things. I enjoy having a routine but I also love learning ways to consciously improve it.
 
