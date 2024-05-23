@@ -24,4 +24,4 @@ What gets me excited
 * making a meaningful direct / indirect impact on society
 * a career in any of social, financial, medical, environmental, fitness, wellness, or mental health industries
 
-[Let's chat](mailto:mihailistov@gmail.com)
+[Let's chat](https://www.linkedin.com/in/mihailistov/)
